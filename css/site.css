@@ -1,17 +1,23 @@
-.site-header {
+.header, .footer {
     background-color: orange;
     color: white;
 }
-.site-header-item {
+.padded-item {
     padding-top: 10px;
 }
-.site-header-icon-item {
+.header-links, .footer-links {
+    padding-left: 40px;
+}
+.header-link, .footer-link {
+    color: white;
+}
+.header-icon-item {
     padding-top: 5px;
 }
-.site-header-icon {
+.header-icon {
     width: 30px;
 }
-.site-title {
+.title {
     height: 80px;
     padding-top: 20px;
     text-align: center;
@@ -23,6 +29,95 @@
     border-bottom-color: orange;
     border-bottom-width: 2px;
 }
-a {
+.navigation {
+    border-bottom-style: solid;
+    border-bottom-color: orange;
+    border-bottom-width: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.navigation-items {
+    padding-left: 40px;
+}
+.navigation-link {
+    color: black;
+}
+.searchbar {
+    padding-top: 3px;
+}
+.searchbar-input {
+    border-style: solid;
+    border-color: orange;
+}
+.content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.content-item {
+    padding-left: 55px;
+    max-height: 150px;
+    margin-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: orange;
+}
+.content-item-heading {
+    color: orange;
+    text-transform: uppercase;
+    font-size: 14pt;
+}
+.content-item-subheading {
+    color: black;
+    font-size: 12pt;
+}
+.content-image-holder {
+    text-align: right;
+}
+.content-image {
+    height: 150px;
+    padding-bottom: 5px;
+}
+.orange {
+    color: orange !important;
+}
+.content-item-more:hover,
+.header-icon-item:hover,
+.input-group-addon:hover,
+.content-more {
+    cursor: pointer;
+}
+.favorites {
+    padding: 7px;
+    height: 270px;
+    border-style: solid;
+    border-color: orange;
+    border-width: 2px;
+}
+.favorites-heading {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10pt;
+    color: orange;
+    margin-bottom: 7px;
+}
+.favorites-item-heading {
+    color: orange;
+    font-weight: bold;
+    font-size: 8pt;
+}
+.favorites-item-text {
+    font-size: 8pt;
+}
+.banners {
+    height: 200px;
+    background-color: #DBE5C3;
+    margin-top: 15px;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 16pt;
     color: white;
+    font-weight: bold;
+}
+.bold {
+    font-weight: bold;
 }
