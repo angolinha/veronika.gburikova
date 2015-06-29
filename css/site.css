@@ -1,0 +1,28 @@
+.site-header {
+    background-color: orange;
+    color: white;
+}
+.site-header-item {
+    padding-top: 10px;
+}
+.site-header-icon-item {
+    padding-top: 5px;
+}
+.site-header-icon {
+    width: 30px;
+}
+.site-title {
+    height: 80px;
+    padding-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20pt;
+    color: orange;
+    background-color: #FDEADC;
+    border-bottom-style: solid;
+    border-bottom-color: orange;
+    border-bottom-width: 2px;
+}
+a {
+    color: white;
+}
