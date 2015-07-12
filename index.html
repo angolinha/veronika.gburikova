@@ -209,7 +209,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row banners">
+                        <div class="row banners" id="text-banner">
                             Textova reklama
                         </div>
                     </div>
@@ -232,7 +232,67 @@
                 &#169; 2015 NazovDennika GmbH
             </div>
         </div>
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
-        <script src="js/bootstrap.min.js"/>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            var name = "<?php echo $S101_01; ?>";
+            var noper = "<?php echo $S102; ?>";
+            var interest = "<?php echo $S202; ?>";
+            var variant = Math.floor((Math.random() * 2) + 1);
+
+            if(noper == '1' || interest == '3'){
+                // VAR 1
+                $('#text-banner').css("background-image", "url(/images/var_1_2.jpg)");
+            } else {
+                if(typeof name === 'undefined' || name == ''){
+                    if(interest == '2' && variant == 1){
+                        // VAR 4
+                        $('#text-banner').css("background-image", "url(/images/var_4_6_8_10.jpg)");
+                    } else {
+                        if(interest == '2' && variant == 2){
+                            // VAR 6
+                            $('#text-banner').css("background-image", "url(/images/var_4_6_8_10.jpg)");
+                        } else {
+                            if(interest == '1' && variant == 1){
+                                // VAR 3
+                                $('#text-banner').css("background-image", "url(/images/var_3_5_7_9.jpg)");
+                            } else {
+                                if(interest == '1' && variant == 2){
+                                    // VAR 5
+                                    $('#text-banner').css("background-image", "url(/images/var_3_5_7_9.jpg)");
+                                }
+                            }
+                        }
+                    }
+                } else {
+                    if(typeof interest === 'undefined' || interest == ''){
+                        // VAR 2
+                        $('#text-banner').css("background-image", "url(/images/var_1_2.jpg)");
+                    } else {
+                        if(interest == '2' && variant == 1){
+                            // VAR 8
+                            $('#text-banner').css("background-image", "url(/images/var_4_6_8_10.jpg)");
+                        } else {
+                            if(interest == '2' && variant == 2){
+                                // VAR 10
+                                $('#text-banner').css("background-image", "url(/images/var_4_6_8_10.jpg)");
+                            } else {
+                                if(interest == '1' && variant == 1){
+                                    // VAR 7
+                                    $('#text-banner').css("background-image", "url(/images/var_3_5_7_9.jpg)");
+                                } else {
+                                    if(interest == '1' && variant == 2){
+                                        // VAR 9
+                                        $('#text-banner').css("background-image", "url(/images/var_3_5_7_9.jpg)");
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        });
+        </script>
     </body>
 </html>
