@@ -114,8 +114,12 @@
     color: white;
     font-weight: bold;
     cursor: pointer;
-    background-size: 360px 200px;
+    background-size: 350px 190px;
     background-repeat: no-repeat;
+    background-position: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
 }
 #banner-badge {
     background-color: #BE0712;
