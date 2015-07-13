@@ -113,6 +113,47 @@
     margin-top: 15px;
     color: white;
     font-weight: bold;
+    cursor: pointer;
+    background-size: 360px 200px;
+    background-repeat: no-repeat;
+}
+#banner-badge {
+    background-color: #BE0712;
+    color: white;
+    padding-top: 7px;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #BE0712;
+    margin-top: 15px;
+}
+#banner-text {
+    color: black;
+    font-size: smaller;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    background-color: white;
+}
+#banner-subtext {
+    color: #BE0712;
+    font-weight: bold;
+    font-size: small;
+    text-align: center;
+    background-color: white;
+}
+#banner-action {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+    background-color: white;
 }
 .bold {
     font-weight: bold;

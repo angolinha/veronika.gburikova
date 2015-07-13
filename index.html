@@ -210,7 +210,30 @@
                             </div>
                         </div>
                         <div class="row banners" id="text-banner">
-                            Textova reklama
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-6 col-lg-offset-3" id="banner-badge">
+                                    eFashion.de
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-8 col-lg-offset-2" id="banner-text">
+                                        Entdecke stillvolle Klassiker,
+                                        trendige Newcomer
+                                        und jede Menge Vielfalt.
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-8 col-lg-offset-2" id="banner-subtext">
+                                        Für Sportinteressierte wie Du!
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-lg-offset-3" id="banner-action">
+                                    Jetzt shoppen >
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -241,26 +264,38 @@
             var interest = "<?php echo $S202; ?>";
             var variant = Math.floor((Math.random() * 2) + 1);
 
+            $('#text-banner').css("background-image", "url(images/var_1_2.jpg)");
+
             if(noper == '1' || interest == '3'){
                 // VAR 1
-                $('#text-banner').css("background-image", "url(/images/var_1_2.jpg)");
+                $('#text-banner').css("background-image", "url(images/var_1_2.jpg)");
+                $("#banner-text").html('Entdecke stillvolle Klassiker, trendige Newcomer und jede Menge Vielfalt.');
+                $("#banner-subtext").html("");
             } else {
                 if(typeof name === 'undefined' || name == ''){
                     if(interest == '2' && variant == 1){
                         // VAR 4
-                        $('#text-banner').css("background-image", "url(/images/var_4_6_8_10.jpg)");
+                        $("#banner-subtext").html("");
+                        $('#text-banner').css("background-image", "url(images/var_4_6_8_10.jpg)");
+                        $("#banner-text").html('Hier kauft man <div id="banner-text">Damen- und Herrenmode!</div> Entdecke stillvolle Klassiker, trendige Newcomer und jede Menge Vielfalt.');
                     } else {
                         if(interest == '2' && variant == 2){
                             // VAR 6
-                            $('#text-banner').css("background-image", "url(/images/var_4_6_8_10.jpg)");
+                            $('#text-banner').css("background-image", "url(images/var_4_6_8_10.jpg)");
+                            $("#banner-text").html('Entdecke stillvolle Klassiker, trendige Newcomer und jede Menge Vielfalt.');
+                            $("#banner-subtext").html("Für Modeinteressierte wie Du!");
                         } else {
                             if(interest == '1' && variant == 1){
                                 // VAR 3
-                                $('#text-banner').css("background-image", "url(/images/var_3_5_7_9.jpg)");
+                                $("#banner-subtext").html("");
+                                $('#text-banner').css("background-image", "url(images/var_3_5_7_9.jpg)");
+                                $("#banner-text").html('Hier kauft man <div id="banner-text">Sportbekleidung!</div> Entdecke stillvolle Klassiker, trendige Newcomer und jede Menge Vielfalt.');
                             } else {
                                 if(interest == '1' && variant == 2){
                                     // VAR 5
-                                    $('#text-banner').css("background-image", "url(/images/var_3_5_7_9.jpg)");
+                                    $('#text-banner').css("background-image", "url(images/var_3_5_7_9.jpg)");
+                                    $("#banner-text").html('Entdecke stillvolle Klassiker, trendige Newcomer und jede Menge Vielfalt.');
+                                    $("#banner-subtext").html("Für Sportinteressierte wie Du!");
                                 }
                             }
                         }
@@ -268,23 +303,33 @@
                 } else {
                     if(typeof interest === 'undefined' || interest == ''){
                         // VAR 2
-                        $('#text-banner').css("background-image", "url(/images/var_1_2.jpg)");
+                        $('#text-banner').css("background-image", "url(images/var_1_2.jpg)");
+                        $("#banner-text").html(name+'! Entdecke stillvolle Klassiker, trendige Newcomer und jede Menge Vielfalt. ');
+                        $("#banner-subtext").html("");
                     } else {
                         if(interest == '2' && variant == 1){
                             // VAR 8
-                            $('#text-banner').css("background-image", "url(/images/var_4_6_8_10.jpg)");
+                            $("#banner-subtext").html("");
+                            $('#text-banner').css("background-image", "url(images/var_4_6_8_10.jpg)");
+                            $("#banner-text").html(name+'! Hier kauft man <div id="banner-subtext">Damen- und Herrenmode!</div> Entdecke stillvolle Klassiker, trendige Newcomer und jede Menge Vielfalt.');
                         } else {
                             if(interest == '2' && variant == 2){
                                 // VAR 10
-                                $('#text-banner').css("background-image", "url(/images/var_4_6_8_10.jpg)");
+                                $('#text-banner').css("background-image", "url(images/var_4_6_8_10.jpg)");
+                                $("#banner-text").html(name+'! Entdecke stillvolle Klassiker, trendige Newcomer und jede Menge Vielfalt.');
+                                $("#banner-subtext").html("Für Modeinteressierte wie Du!");
                             } else {
                                 if(interest == '1' && variant == 1){
                                     // VAR 7
-                                    $('#text-banner').css("background-image", "url(/images/var_3_5_7_9.jpg)");
+                                    $("#banner-subtext").html("");
+                                    $('#text-banner').css("background-image", "url(images/var_3_5_7_9.jpg)");
+                                    $("#banner-text").html(name+'! Hier kauft man <div id="banner-subtext">Sportbekleidung!</div> Entdecke stillvolle Klassiker, trendige Newcomer und jede Menge Vielfalt.');
                                 } else {
                                     if(interest == '1' && variant == 2){
                                         // VAR 9
-                                        $('#text-banner').css("background-image", "url(/images/var_3_5_7_9.jpg)");
+                                        $('#text-banner').css("background-image", "url(images/var_3_5_7_9.jpg)");
+                                        $("#banner-text").html(name+'! Entdecke stillvolle Klassiker, trendige Newcomer und jede Menge Vielfalt.');
+                                        $("#banner-subtext").html("Für Sportinteressierte wie Du!");
                                     }
                                 }
                             }
