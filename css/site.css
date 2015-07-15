@@ -136,10 +136,10 @@
 }
 #banner-text {
     color: black;
-    font-size: smaller;
+    font-size: small;
     font-weight: bold;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 5px;
     background-color: white;
 }
 #banner-subtext {
@@ -156,7 +156,7 @@
     font-weight: bold;
     color: black;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 5px;
     background-color: white;
 }
 .bold {

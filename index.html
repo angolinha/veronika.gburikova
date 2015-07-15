@@ -218,7 +218,11 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6 col-lg-offset-3" id="banner-action">
-                                    Jetzt shoppen >>
+                                        <div class="row">
+                                            <div class="col-lg-10 col-lg-offset-1">
+                                            Jetzt shoppen >>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -248,37 +252,39 @@
         <script src="js/bootstrap.min.js"></script>
         <script>
         $(document).ready(function(){
+            var name = "<?php echo $S101_01; ?>";
+            var zahl = "<?php echo $IV02_01; ?>";
 
             $('#results').html(zahl);
 
-            if(%zahl% == '1'){
-                $('#text-banner').css("background-image", "url(https://angolinha.github.io/veronika.gburikova/images/var_3_5_7_9.jpg)");
+            if(zahl == '1'){
+                $('#text-banner').css("background-image", "url(https://angolinha.github.io/veronika.gburikova/images/sport.jpg)");
                 $("#banner-text").html('Entdecke stillvolle Klassiker, trendige Newcomer und jede Menge Vielfalt.');
                 $("#banner-subtext").html("");
 
-            } else if(%zahl% == '2'){
-                $('#text-banner').css("background-image", "url(https://angolinha.github.io/veronika.gburikova/images/var_3_5_7_9.jpg)");
-                $("#banner-text").html(name+'! Entdecke stillvolle Klassiker, trendige Newcomer und jede Menge Vielfalt. ');
+            } else if(zahl == '2'){
+                $('#text-banner').css("background-image", "url(https://angolinha.github.io/veronika.gburikova/images/sport.jpg)");
+                $("#banner-text").html(name+'<br/>Entdecke stillvolle Klassiker, trendige Newcomer und jede Menge Vielfalt. ');
                 $("#banner-subtext").html("");
 
-            } else if(%zahl% == '3'){
+            } else if(zahl == '3'){
                 $("#banner-subtext").html("");
-                $('#text-banner').css("background-image", "url(https://angolinha.github.io/veronika.gburikova/images/var_3_5_7_9.jpg)");
+                $('#text-banner').css("background-image", "url(https://angolinha.github.io/veronika.gburikova/images/sport.jpg)");
                 $("#banner-text").html('Hier kauft man <div id="banner-subtext">Sportbekleidung!</div> Entdecke stillvolle Klassiker, trendige Newcomer und jede Menge Vielfalt.');
 
-            } else if(%zahl% == '4'){
-                $('#text-banner').css("background-image", "url(https://angolinha.github.io/veronika.gburikova/images/var_3_5_7_9.jpg)");
+            } else if(zahl == '4'){
+                $('#text-banner').css("background-image", "url(https://angolinha.github.io/veronika.gburikova/images/sport.jpg)");
                 $("#banner-text").html('Entdecke stillvolle Klassiker, trendige Newcomer und jede Menge Vielfalt.');
                 $("#banner-subtext").html("Für Sportbegeisterte wie Du!");
 
-            } else if(%zahl% == '5'){
+            } else if(zahl == '5'){
                 $("#banner-subtext").html("");
-                $('#text-banner').css("background-image", "url(https://angolinha.github.io/veronika.gburikova/images/var_3_5_7_9.jpg)");
-                $("#banner-text").html(name+'! Hier kauft man <div id="banner-subtext">Sportbekleidung!</div> Entdecke stillvolle Klassiker, trendige Newcomer und jede Menge Vielfalt.');
+                $('#text-banner').css("background-image", "url(https://angolinha.github.io/veronika.gburikova/images/sport.jpg)");
+                $("#banner-text").html(name+'<br/>Hier kauft man <div id="banner-subtext">Sportbekleidung!</div> Entdecke stillvolle Klassiker, trendige Newcomer und jede Menge Vielfalt.');
 
-            } else if(%zahl% == '6'){
-                $('#text-banner').css("background-image", "url(https://angolinha.github.io/veronika.gburikova/images/var_3_5_7_9.jpg)");
-                $("#banner-text").html(name+'! Entdecke stillvolle Klassiker, trendige Newcomer und jede Menge Vielfalt.');
+            } else if(zahl == '6'){
+                $('#text-banner').css("background-image", "url(https://angolinha.github.io/veronika.gburikova/images/sport.jpg)");
+                $("#banner-text").html(name+'<br/>Entdecke stillvolle Klassiker, trendige Newcomer und jede Menge Vielfalt.');
                 $("#banner-subtext").html("Für Sportbegeisterte wie Du!");
 
             }
