@@ -55,7 +55,7 @@
 }
 .content-item {
     padding-left: 55px;
-    max-height: 150px;
+    max-height: 170px;
     margin-bottom: 10px;
     border-bottom-style: solid;
     border-bottom-width: 1px;
@@ -114,7 +114,7 @@
     color: white;
     font-weight: bold;
     cursor: pointer;
-    background-size: 350px 190px;
+    background-size: 500px 190px;
     background-repeat: no-repeat;
     background-position: center;
     border-style: solid;
@@ -125,10 +125,10 @@
     background-color: #BE0712;
     color: white;
     padding-top: 7px;
-    height: 40px;
+    height: 55px;
     text-align: center;
     font-weight: bold;
-    font-size: larger;
+    font-size: x-large;
     border-radius: 10px;
     border-style: solid;
     border-color: #BE0712;
